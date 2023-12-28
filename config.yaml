@@ -1,0 +1,14 @@
+#configuration for creating the database and table
+default_db: "postgres" #the default postgresql database
+host: "localhost" #the host of the database
+new_db: "test" #the name of the new database that will be created
+
+
+#configuration for creating the table. For more columns, copy/paste 'name' and 'type'.
+table:
+  name: "test_table" #the name of the table
+  columns:
+    - name: "firstname" #column name
+      type: "TEXT" #data type
+    - name: "lastname"
+      type: "TEXT"
