@@ -1,0 +1,36 @@
+GCP Cloud endpoints
+- https://cloud.google.com/endpoints/docs
+- https://cloud.google.com/endpoints/docs/deploy-api
+- https://cloud.google.com/endpoints/docs/openapi/tutorials
+- https://cloud.google.com/endpoints/docs/openapi/how-to
+- GCP free tier
+    - 28 hours per day free for f instances of app engine: https://cloud.google.com/free/docs/free-cloud-features#app-engine
+    - up to 2m calls per month in endpoints: https://cloud.google.com/endpoints/pricing
+
+To make sure API is scalable on GCP
+- API load balancing (should be enabled with cloud endpoints)
+- Database is optimised, indexed. API queries are optimised.
+- API rate limiting - cloud endpoints allows you to configure this
+- Caching for frequently accessed data (e.g. all the read queries)
+- Validate all inputs to prevent sql injection
+
+GCP Cloud SQL PostgreSQL
+- https://cloud.google.com/sql/docs/postgres#docs
+- https://cloud.google.com/sql/docs/postgres#training-and-tutorials
+- https://codelabs.developers.google.com/codelabs/connecting-to-cloud-sql-with-cloud-functions/#0
+- There is no free tier. But you can use your $300 credit.
+
+
+Examples of good documentation
+- https://github.com/Netflix/Hystrix/wiki
+- https://github.com/facebook/react-native/blob/main/README.md
+
+THemes for github pages
+- https://jekyllthemes.io/theme/alembic
+- https://jekyllthemes.io/theme/reverie
+
+I could update to a nosql database and then I would get access to free tier
+- https://firebase.google.com/docs/firestore/quotas
+
+
+
