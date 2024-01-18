@@ -27,7 +27,7 @@ AS $$
 BEGIN
     IF EXISTS (SELECT 1 FROM employees WHERE business_key = _business_key AND deleted_dttm IS NULL) THEN
         UPDATE employees 
-        SET deleted_dttm = (now() AT TIME ZONE '\''UTC'\'') - INTERVAL '\''1 second'\''
+        SET deleted_dttm = (now() AT TIME ZONE 'UTC') - INTERVAL '1 second'
         WHERE business_key = _business_key
         AND deleted_dttm IS NULL;
         INSERT INTO employees (
@@ -44,7 +44,7 @@ BEGIN
             _lastname
             );
     ELSE
-        RAISE EXCEPTION '\''Could not find a record with that business_key'\'';
+        RAISE EXCEPTION 'Could not find a record with that business_key';
     END IF;
 END;
 $$;
@@ -55,11 +55,11 @@ AS $$
 BEGIN
     IF EXISTS (SELECT 1 FROM employees WHERE business_key = _business_key AND deleted_dttm IS NULL) THEN
         UPDATE employees 
-        SET deleted_dttm = (now() AT TIME ZONE '\''UTC'\'') - INTERVAL '\''1 second'\''
+        SET deleted_dttm = (now() AT TIME ZONE 'UTC') - INTERVAL '1 second'
         WHERE business_key = _business_key
         AND deleted_dttm IS NULL;
     ELSE
-        RAISE EXCEPTION '\''Could not find a record with that business_key'\'';
+        RAISE EXCEPTION 'Could not find a record with that business_key';
     END IF;
 END;
 $$;
