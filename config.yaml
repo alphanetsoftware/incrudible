@@ -1,0 +1,7 @@
+table:
+  name: "employees"
+  columns:
+    - name: "firstname"
+      type: "text"
+    - name: "lastname"
+      type: "text"

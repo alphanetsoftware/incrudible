@@ -1,5 +1,4 @@
 create postgresql database
 Enable compute engine api
 Enable cloud sql admin api
-get cloud-sql-proxy into the directory and make it executable https://cloud.google.com/sql/docs/mysql/connect-auth-proxy
-Then run the statements
+Run setup.sh statements
