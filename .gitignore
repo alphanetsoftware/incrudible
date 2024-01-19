@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# SQL statements (because we generate them)
+*.sql
+
 # Distribution / packaging
 .Python
 build/
